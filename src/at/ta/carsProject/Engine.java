@@ -20,11 +20,10 @@ public class Engine {
     public void odlerEngineConsumption() {
         if (this.getKilometersDriven() >= 50000.0) {
             double olderEngineConsumtion = this.getFuelConsumption() * 1.098;
-            System.out.println("Your Fuel consumption is higher Because your Engine driving more than 50.000 km  "
-                    + olderEngineConsumtion + " liter.");
+            System.out.printf("Your Fuel consumption is higher Because your Engine " +
+                    "driving more than 50.000 km %.2f Liter.\n ", olderEngineConsumtion);
         } else {
-            System.out.println("Your Fuel consumption is normal by "
-                    + this.getFuelConsumption() + " liter.");
+            System.out.printf("Your Fuel consumption is normal by %.2f Liter.\n  ", this.getFuelConsumption());
         }
     }
 
