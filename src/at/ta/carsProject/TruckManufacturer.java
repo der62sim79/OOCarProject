@@ -20,9 +20,9 @@ public class TruckManufacturer extends Manufacturer {
     public void manufacturerDiscount(boolean trailer) {
         if (trailer) {
             double discount = calculateDiscount(getBasePrice(), getDiscount());
-            System.out.println("Your Vehicle without tailer cost " + discount + " €.");
+            System.out.printf("Your Vehicle without tailer cost %.2f €.\n", discount);
             discount = discount + 50000.00;
-            System.out.println("Plus 50.000.-€ for the Trailerr " + discount + " €");
+            System.out.printf("Plus 50.000.-€ for the Trailerr %.2f €.\n ", discount);
         } else {
             super.manufacturerDiscount();
         }

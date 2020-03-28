@@ -22,7 +22,7 @@ public class Manufacturer {
     public void manufacturerDiscount() {
         double manufacturerDiscount = (100 / this.basePrice) * this.discount;
         this.basePrice = this.basePrice - manufacturerDiscount;
-        System.out.println("Your Vehicle cost with our discount form " + discount + " % now total " + getBasePrice() + " €.");
+        System.out.printf("Your Vehicle cost with our discount form " + discount + " precent now total %.2f €.\n", getBasePrice());
     }
 
     public String getBrand() {
