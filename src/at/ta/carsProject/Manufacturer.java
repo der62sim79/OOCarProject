@@ -14,10 +14,15 @@ public class Manufacturer {
         this.basePrice = basePrice;
     }
 
+    public double calculateDiscount(double basePrice, double discount) {
+        double manufacturerDiscount = (100 / this.basePrice) * this.discount;
+        return this.basePrice - manufacturerDiscount;
+    }
+
     public void manufacturerDiscount() {
         double manufacturerDiscount = (100 / this.basePrice) * this.discount;
         this.basePrice = this.basePrice - manufacturerDiscount;
-        System.out.println("Your Car cost wiht your discount form " + discount + " % now total " + getBasePrice() + " €.");
+        System.out.println("Your Vehicle cost with our discount form " + discount + " % now total " + getBasePrice() + " €.");
     }
 
     public String getBrand() {
