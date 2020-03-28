@@ -14,6 +14,7 @@ public class Manufacturer {
         this.basePrice = basePrice;
     }
 
+    //überall aufrufbar für if methode
     public double calculateDiscount(double basePrice, double discount) {
         double manufacturerDiscount = (100 / this.basePrice) * this.discount;
         return this.basePrice - manufacturerDiscount;

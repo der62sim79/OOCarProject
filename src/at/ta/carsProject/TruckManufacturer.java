@@ -24,6 +24,7 @@ public class TruckManufacturer extends Manufacturer {
             discount = discount + 50000.00;
             System.out.printf("Plus 50.000.-€ for the Trailerr %.2f €.\n ", discount);
         } else {
+            //oberklasse methode
             super.manufacturerDiscount();
         }
 

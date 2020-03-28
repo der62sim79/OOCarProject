@@ -25,6 +25,7 @@ public class SportCarManufacturer extends Manufacturer {
             discount = discount + 500.00;
             System.out.printf("Plus 500.-€ for the Wing %.2f €.\n", discount);
         } else {
+            //oberklasse methode
             super.manufacturerDiscount();
         }
 
